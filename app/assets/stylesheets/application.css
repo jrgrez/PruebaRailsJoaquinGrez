@@ -10,6 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require bootstrap
  *= require_tree .
  *= require_self
  */
@@ -77,4 +78,8 @@ span{
     text-decoration: none;
     font-size: 40px;
     display:  inline-block;
+}
+
+.pag2{
+    background-image: url("image1.jpg");
 }
