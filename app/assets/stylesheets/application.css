@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+img.batman{
+	background-color: transparent;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-clip: border-box, border-box;
+    background-origin: padding-box, padding-box;
+    background-size: 50% 100%;
+    background-position: left top, right top;
+
+}
+img.superman{
+	background-color: transparent;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-clip: border-box, border-box;
+    background-origin: padding-box, padding-box;
+    background-size: 50% 100%;
+    background-position: left top, right top;
+
+}
+
+
