@@ -1,2 +1,47 @@
-<%= link_to (image_tag "superman.jpg"), pages_superman_path, class: "superman" %>
-<%= link_to (image_tag "batman.jpg"), pages_batman_path, class: "batman" %>
+<%= link_to "Batman", pages_batman_path, class: "batmanlink" %>
+<%= link_to "Superman", pages_batman_path, class: "supermanlink" %>
+
+<div class="containerbatman">
+
+	<%= form_tag(action: "save_vote", class: "batman") do%>
+		<div class="form-group">
+			<%= label_tag :name, "Nombre"%>
+			<%= text_field_tag :name, nil, placeholder:"Nombre", class: "form-control", type: "text"%>
+		</div>
+		<div class="form-group">
+			<%= label_tag :email, "Email" %>
+			<%= text_field_tag :email,nil, placeholder: "Email", class: "form-control"%>
+		</div>
+		<div>
+			<%= submit_tag "Votar por Batman", class: "btn btn-success batman" %>
+		</div>
+	<% end %>
+
+</div>
+
+<div class="containersuperman">
+
+	<%= form_tag(action: "save_vote", class:"superman")   do%>
+		<div class="form-group">
+			<%= label_tag :name, "Nombre"%>
+			<%= text_field_tag :name, nil, placeholder:"Nombre", class: "form-control", type: "text"%>
+		</div>
+		<div class="form-group">
+			<%= label_tag :email, "Email" %>
+			<%= text_field_tag :email,nil, placeholder: "Email", class: "form-control"%>
+		</div>
+		<div>
+			<%= submit_tag "Votar Por Superman", class: "btn btn-success superman" %>
+		</div>
+	<% end %>
+</div>
+
+<div class="votossuper">
+	<h1>Votos Superman</h1>
+	<h1><%= @votossuper.count %></h1>
+</div>
+
+<div class="votosbat">
+	<h1>Votos Batman</h1>
+	<h1><%= @votosbat.count %></h1>
+</div>

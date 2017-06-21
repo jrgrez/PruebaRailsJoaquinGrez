@@ -1,0 +1,2 @@
+class VotoBatman < ApplicationRecord
+end
